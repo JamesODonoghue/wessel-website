@@ -11,7 +11,7 @@ function App() {
 	return (
 		<Router>
 			<Header/>
-			<div class="main-content">
+			<div className="main-content">
 				<Route path='/' exact component={About} />
 				<Route path='/about' component={About} />
 				<Route path='/volunteer' component={Volunteer} />

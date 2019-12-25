@@ -7,7 +7,7 @@
 :root {
     --header-bg-color: #233142;
     --button-color: #f95959;
-    --tertiary-color: #e3e3e3;
+    --tertiary-color: #fafafa;
 }
 
 .App-header {
@@ -33,14 +33,14 @@
     padding: 3em;
 }
 
-.main-content__header h2 {
-	font-size: 3rem;
-	font-weight: 900;
+.h2 {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-.main-content__header h4 {
-	font-size: 2rem;
-	font-weight: 200;
+.h4 {
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 .navbar__link {
@@ -50,7 +50,7 @@
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size:18px;
+    font-size: 18px;
     margin-right: 2em;
     font-weight: 400;
     transition: all 100ms;
@@ -58,45 +58,52 @@
 
 .navbar a:hover {
     color: var(--button-color);
-
 }
 
 .volunteer-form {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volunteer-form__header {
+    margin-bottom: 3em;
 }
 
 .form-input {
-	max-width: 150px;
+    max-width: 150px;
 }
 
 .form-input__container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .form-input__container input {
-	width: 300px;
-	padding: 10px;
-	line-height: 18px;;
-	border: 1px solid #dbe3f4;
-	border-radius: 3px;
-	font-size: 18px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 1em;
+    line-height: 18px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: var(--tertiary-color);
 }
 
 .header {
     justify-content: space-between;
-    padding: 0 3em;
+    padding: 1em 3em;
     background-color: var(--header-bg-color);
-    color: #fff
+    color: #fff;
 }
 
 .donate-button {
     padding: 12px;
     border-radius: 3em;
+    border: 2px solid var(--button-color);
     background: var(--button-color);
-    border-color: var(--button-color);
     color: #fff;
     text-transform: uppercase;
     font-weight: 900;
@@ -105,10 +112,28 @@
     cursor: pointer;
 }
 
+.send-button button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+    background: var(--button-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    transition: all 100ms;
+    cursor: pointer;
+    width: 300px;
+}
+
+.send-button button:hover {
+    background-color: #fff;
+    color: var(--button-color);
+}
+
 .donate-button:hover {
     background-color: #fff;
     color: var(--button-color);
-    border-color: #fff;
 }
 
 .App-link {

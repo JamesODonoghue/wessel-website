@@ -1,7 +1,7 @@
 import React from 'react';
 function About() {
     return (
-        <section className="main-content">
+        <section>
             <div className="main-content__header">
                 <h2>About</h2>
                 <h4> House District 45</h4>
