@@ -1,49 +1,125 @@
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+:root {
+    --header-bg-color: #233142;
+    --button-color: #f95959;
+    --tertiary-color: #e3e3e3;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.header, .navbar {
-  display: flex;
-  align-items: center;
+.header,
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 3em;
+}
+
+.main-content__header h2 {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.main-content__header h4 {
+	font-size: 2rem;
+	font-weight: 200;
 }
 
 .navbar__link {
-  margin-right: 3em;
+    margin-right: 3em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size:18px;
+    margin-right: 2em;
+    font-weight: 400;
+    transition: all 100ms;
+}
+
+.navbar a:hover {
+    color: var(--button-color);
 
 }
 
-.navbar__link a {
-  text-decoration: none;
-  color: #000;
+.volunteer-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-input {
+	max-width: 150px;
+}
+
+.form-input__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.form-input__container input {
+	width: 300px;
+	padding: 10px;
+	line-height: 18px;;
+	border: 1px solid #dbe3f4;
+	border-radius: 3px;
+	font-size: 18px;
 }
 
 .header {
-  justify-content: space-between;
-  padding: 0 3em;
+    justify-content: space-between;
+    padding: 0 3em;
+    background-color: var(--header-bg-color);
+    color: #fff
+}
+
+.donate-button {
+    padding: 12px;
+    border-radius: 3em;
+    background: var(--button-color);
+    border-color: var(--button-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #fff;
+    color: var(--button-color);
+    border-color: #fff;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
