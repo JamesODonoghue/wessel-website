@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import Header from './components/Header';
@@ -11,11 +10,11 @@ function App() {
 	return (
 		<Router>
 			<Header/>
-			<div className="main-content">
+			<main>
 				<Route path='/' exact component={About} />
 				<Route path='/about' component={About} />
 				<Route path='/volunteer' component={Volunteer} />
-			</div>
+			</main>
 		</Router>
 	)
 }

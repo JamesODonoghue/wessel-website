@@ -22,30 +22,32 @@ export default class VolunteerForm extends React.Component {
     }
     render() {
         return (
-            <form className="volunteer-form" onSubmit={this.handleSubmit}>
-                <div className="volunteer-form__header">
-                    <h2>Volunteer Signup</h2>
-                </div>
-                <div className="form-input__container">
-                    <label>First Name</label>
-                    <input name="firstName" onChange={this.handleChange}></input>
-                </div>
-                <div className="form-input__container">
-                    <label>Last Name</label>
-                    <input name="lastName" onChange={this.handleChange}></input>
-                </div>
-                <div className="form-input__container">
-                    <label>Email</label>
-                    <input name="email" onChange={this.handleChange}></input>
-                </div>
-                <div className="form-input__container">
-                    <label>Phone</label>
-                    <input name="phone" onChange={this.handleChange}></input>
-                </div>
-                <div className="send-button">
-                    <button type="submit"> Send </button>
-                </div>
-            </form>
+            <section>
+                <form className="volunteer-form" onSubmit={this.handleSubmit}>
+                    <div className="volunteer-form__header">
+                        <h2>Volunteer Signup</h2>
+                    </div>
+                    <div className="form-input__container">
+                        <label>First Name</label>
+                        <input name="firstName" onChange={this.handleChange}></input>
+                    </div>
+                    <div className="form-input__container">
+                        <label>Last Name</label>
+                        <input name="lastName" onChange={this.handleChange}></input>
+                    </div>
+                    <div className="form-input__container">
+                        <label>Email</label>
+                        <input name="email" onChange={this.handleChange}></input>
+                    </div>
+                    <div className="form-input__container">
+                        <label>Phone</label>
+                        <input name="phone" onChange={this.handleChange}></input>
+                    </div>
+                    <div className="send-button">
+                        <button type="submit"> Send </button>
+                    </div>
+                </form>
+            </section>
         )
     }
 }
