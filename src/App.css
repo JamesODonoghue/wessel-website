@@ -1,14 +1,15 @@
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
+
 
 :root {
     --header-bg-color: #233142;
     --button-color: #f95959;
     --tertiary-color: #fafafa;
 }
+html {
+    font-family: serif;
+}
+
+/* Layout style */
 
 main,
 header,
@@ -43,6 +44,15 @@ h4 {
     font-weight: 200;
 }
 
+/* Header style */
+
+.header {
+    justify-content: space-between;
+    padding: 1em 3em;
+    background-color: var(--header-bg-color);
+    color: #fff;
+}
+
 .navbar__link {
     margin-right: 3em;
 }
@@ -60,6 +70,8 @@ h4 {
     color: var(--button-color);
 }
 
+/* Form style */
+
 .volunteer-form {
     display: flex;
     flex-direction: column;
@@ -70,33 +82,44 @@ h4 {
     margin-bottom: 3em;
 }
 
-.form-input {
-    max-width: 150px;
+.volunteer-form__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.form-input__container {
+.form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
-.form-input__container input {
+form input {
     width: 300px;
     padding: 10px;
-    margin-top: 1em;
+    margin: 1em 0;
     line-height: 18px;
-    border: 1px solid var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
     border-radius: 3px;
     font-size: 18px;
     background-color: var(--tertiary-color);
 }
 
-.header {
-    justify-content: space-between;
-    padding: 1em 3em;
-    background-color: var(--header-bg-color);
-    color: #fff;
+input:focus {
+    border: 2px solid var(--button-color);
+    outline-width: 0;
+}
+
+/* Button style */
+
+button:hover {
+    background-color: #fff;
+    color: var(--button-color);
+}
+
+.donate-button:hover {
+    background-color: #fff;
+    color: var(--button-color);
+    border-color: #fff;
 }
 
 .donate-button {
@@ -112,7 +135,7 @@ h4 {
     cursor: pointer;
 }
 
-.send-button button {
+form button {
     padding: 12px;
     border-radius: 5px;
     border: 2px solid var(--button-color);
@@ -124,29 +147,6 @@ h4 {
     transition: all 100ms;
     cursor: pointer;
     width: 300px;
-}
-
-.send-button button:hover {
-    background-color: #fff;
-    color: var(--button-color);
-}
-
-.donate-button:hover {
-    background-color: #fff;
-    color: var(--button-color);
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 @media (min-width: 400px) {

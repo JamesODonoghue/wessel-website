@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
-import Volunteer from './components/Volunteer';
+import VolunteerForm from './components/VolunteerForm';
 
 function App() {
 	return (
@@ -13,7 +13,7 @@ function App() {
 			<main>
 				<Route path='/' exact component={About} />
 				<Route path='/about' component={About} />
-				<Route path='/volunteer' component={Volunteer} />
+				<Route path='/volunteer' component={VolunteerForm} />
 			</main>
 		</Router>
 	)
