@@ -1,0 +1,20 @@
+@import '../../hamburgers-master/dist/hamburgers.css';
+
+button.hamburger {
+    background: none;
+    align-self: flex-end;
+}
+
+button.hamburger:focus {
+    outline-width: 0;
+}
+
+.hamburger {
+    /* padding: 0; */
+}
+
+@media (min-width: 400px) {
+    .hamburger {
+        display: none;
+    }
+}

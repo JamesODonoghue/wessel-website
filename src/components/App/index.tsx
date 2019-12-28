@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import About from '../About';
 import VolunteerSignUp from '../VolunteerSignUp';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
 import SignUpPage from '../SignUp';
-
+import Landing from '../Landing';
+import Menu from '../Menu';
 import { ROUTES } from '../../constants/routes';
 
 const App = () => {
@@ -14,12 +16,13 @@ const App = () => {
         <Router>
             <Navigation />
             <main>
-                <Route path={ROUTES.LANDING} exact component={About} />
+                <Route path={ROUTES.LANDING} exact component={Landing} />
                 <Route path={ROUTES.ABOUT} component={About} />
                 <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
                 <Route path={ROUTES.VOLUNTEER} component={VolunteerSignUp} />
                 <Route path={ROUTES.ADMIN} />
             </main>
+            <Footer/>
         </Router>
     )
 }

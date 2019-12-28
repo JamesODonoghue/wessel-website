@@ -2,8 +2,8 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 
 const SignupForm = () => (
-    <section className="volunteer-form__container">
-        <div className="volunteer-form__header">
+    <section className="form__container">
+        <div className="form__header">
             <h2>Volunteer Signup</h2>
         </div>
         <Formik
