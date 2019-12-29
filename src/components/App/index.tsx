@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom"
+import { ROUTES } from '../../constants/routes';
 import About from '../About';
 import VolunteerSignUp from '../VolunteerSignUp';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import SignUpPage from '../SignUp';
 import Landing from '../Landing';
-import { ROUTES } from '../../constants/routes';
+import Media from '../Media';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path={ROUTES.ABOUT} component={About} />
                 <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
                 <Route path={ROUTES.VOLUNTEER} component={VolunteerSignUp} />
+                <Route path={ROUTES.MEDIA} component={Media} />
                 <Route path={ROUTES.ADMIN} />
             </main>
             <Footer/>

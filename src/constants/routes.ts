@@ -8,5 +8,6 @@ export enum ROUTES {
     ACCOUNT = '/account',
     ADMIN = '/admin',
     PASSWORD_FORGET = '/password-forget',
-    VOLUNTEER = '/volunteer'
+    VOLUNTEER = '/volunteer',
+    MEDIA = '/media'
 }
