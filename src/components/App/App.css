@@ -74,6 +74,11 @@ section {
     padding: 3em;
 }
 
+.main-content__header {
+    display: flex;
+    flex-direction: column;
+}
+
 h1,
 h2,
 h4 {
@@ -130,10 +135,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.form__header {
-    margin-bottom: 3em;
 }
 
 .form__container {
@@ -226,19 +227,19 @@ footer {
 @media (min-width: 600px) {
 
     main {
-        margin-top: 20rem;
+        margin-top: 12rem;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     html {
-        font-size: 10px;
+        font-size: 9px;
     }
     .navbar {
         position: relative;
@@ -297,5 +298,12 @@ footer {
     section {
         max-width: 100%;
         margin: 5rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    main {
+        margin-top: 20rem;
+        margin-bottom: 5rem;
     }
 }
