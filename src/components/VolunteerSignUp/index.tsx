@@ -4,7 +4,7 @@ import { Formik, Field, Form } from 'formik';
 const SignupForm = () => (
     <section className="form__container">
         <div className="form__header">
-            <h2>Volunteer Signup</h2>
+            <h1>Volunteer Signup</h1>
         </div>
         <Formik
             initialValues={{
