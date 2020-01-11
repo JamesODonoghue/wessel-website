@@ -164,7 +164,7 @@ a:hover {
     flex-direction: column;
 }
 
-.form input {
+.form-container input, form input {
     min-width: 300px;
     max-width: 400px;
     padding: 10px;
