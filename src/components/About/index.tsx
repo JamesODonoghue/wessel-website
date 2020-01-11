@@ -1,5 +1,25 @@
 import React from "react";
 import Skeleton from "react-loading-skeleton";
+
+const listView = (list: []) => (
+    list.map(({
+        text, link, title
+    }: {
+        text: string;
+        link: string,
+        title: string
+    }) => (
+            <div className="list-container">
+                <div className="list-item-title">{title}</div>
+                <div className="list-item-body">
+                    <p style={{ marginBottom: '2rem' }}>
+                        <a href={link}>{text}</a>
+                    </p>
+                </div>
+            </div>
+        )
+    )
+)
 class About extends React.Component<any, any> {
     listOfBills: [];
 
@@ -31,6 +51,7 @@ class About extends React.Component<any, any> {
         }
     }
 
+
     render() {
         const { listOfBills, loadingBills } = this.state;
         return (
@@ -40,14 +61,7 @@ class About extends React.Component<any, any> {
                         <h1>Sponsored Legislation</h1>
                     </div>
                     {listOfBills.length > 0
-                        ? listOfBills.map(
-                            ({ text, link }: { text: string; link: string }) => (
-                                <p style={{marginBottom: '2rem'}}>
-                                    <a href={link}>{text}</a>
-                                </p>
-                                
-                            )
-                        )
+                        ? listView(listOfBills)
                         : loadingBills.map(() => (
                             <p>
                                 <Skeleton count={3} />
