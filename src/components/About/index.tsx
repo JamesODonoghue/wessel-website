@@ -37,8 +37,7 @@ class About extends React.Component<any, any> {
             <div>
                 <section>
                     <div className="main-content__header">
-                        <h1>Legislation</h1>
-                        <h2> Bills</h2>
+                        <h1>Sponsored Legislation</h1>
                     </div>
                     {listOfBills.length > 0
                         ? listOfBills.map(
